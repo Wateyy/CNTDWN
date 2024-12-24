@@ -10,7 +10,7 @@ export default function Home() {
           <Link
             key={key}
             href={`/${key}`}
-            className="text-xl font-bold text-white hover:text-gray-300 transition-colors"
+            className="text-xl font-bold text-white hover:text-gray-300 transition-colors selectable"
           >
             {exam.name}
           </Link>
