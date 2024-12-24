@@ -20,8 +20,8 @@ export function Countdown({ targetDate, examName }: CountdownProps) {
   }, [targetDate])
 
   return (
-    <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-2 sm:p-4 text-center">
-      <div className="text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold mb-2 sm:mb-4 tracking-wider break-words">
+    <div className="h-full bg-black text-white flex flex-col items-center justify-center p-2 sm:p-4 text-center">
+      <div className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-2 sm:mb-4 tracking-wider break-words">
         {timeLeft.days}:{timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
       </div>
       <div className="text-xs sm:text-sm md:text-base mb-4 sm:mb-8 tracking-wide">

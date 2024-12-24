@@ -15,14 +15,14 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className="dark">
-      <body className={`${inter.className} antialiased`}>
-        <main className="min-h-screen pb-8">
-          {children}
-        </main>
-        <div className="fixed bottom-2 right-2 text-white opacity-70 text-xs sm:text-sm">
-          github/mafwbh
-        </div>
+    <html lang="en" className="dark h-full">
+      <body className={`${inter.className} antialiased h-full flex flex-col`}>
+        <main className="flex-grow">{children}</main>
+        <footer className="p-2">
+          <div className="text-white opacity-70 text-xs sm:text-sm text-right">
+            github/mafwbh
+          </div>
+        </footer>
       </body>
     </html>
   )
