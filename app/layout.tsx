@@ -17,8 +17,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <body className={`${inter.className} antialiased`}>
-        {children}
-        <div className="fixed bottom-2 right-2 text-white opacity-70 text-sm">
+        <main className="min-h-screen pb-8">
+          {children}
+        </main>
+        <div className="fixed bottom-2 right-2 text-white opacity-70 text-xs sm:text-sm">
           github/mafwbh
         </div>
       </body>
