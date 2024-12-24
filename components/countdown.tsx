@@ -2,6 +2,9 @@
 
 import { useEffect, useState } from 'react'
 import { calculateTimeLeft } from '@/utils/calculate-time-left'
+import { JetBrains_Mono } from 'next/font/google'
+
+const mono = JetBrains_Mono({ subsets: ['latin'] })
 
 interface CountdownProps {
   targetDate: Date
@@ -21,7 +24,7 @@ export function Countdown({ targetDate, examName }: CountdownProps) {
 
   return (
     <div className="min-h-screen bg-black text-white flex flex-col items-center justify-center p-4 text-center">
-      <div className="text-6xl md:text-8xl font-bold mb-8 font-mono">
+      <div className={`text-6xl md:text-8xl font-bold mb-8 ${mono.className} tracking-wider`}>
         {timeLeft.days}:{timeLeft.hours}:{timeLeft.minutes}:{timeLeft.seconds}
       </div>
       <div className="text-xl md:text-2xl uppercase tracking-wider font-bold">
