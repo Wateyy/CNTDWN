@@ -5,7 +5,7 @@ export const exams = {
     },
     jeemain: {
       name: 'MAINS',
-      date: new Date('2026-02-01T09:00:00')
+      date: new Date('2026-01-22T09:00:00')
     }
   }
   
