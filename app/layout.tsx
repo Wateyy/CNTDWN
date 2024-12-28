@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: 'JEE 2026 Final Countdown',
   description: 'Countdown to JEE 2026',
   icons: {
-    icon: '/favicon.ico', 
+    icon: 'public/favicon.ico', 
   },
 }
 
